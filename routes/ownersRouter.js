@@ -1,4 +1,3 @@
-require('dotenv').config(); //Load environment variables first
 const express = require("express")
 const router = express.Router()
 

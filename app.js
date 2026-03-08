@@ -7,6 +7,7 @@ const index = require("./routes/index")
 const ownersRouter = require("./routes/ownersRouter")
 const usersRouter = require("./routes/usersRouter")
 const productsRouter = require("./routes/productsRouter")
+require('dotenv').config(); //Load environment variables first
 
 const db = require("./config/mongoose-connection")
 
@@ -21,4 +22,8 @@ app.use("/owners", ownersRouter)
 app.use("/users", usersRouter)
 app.use("/products", productsRouter)
 
-app.listen(3000)
+const PORT = 3000;
+app.listen(PORT, function(err){
+    if (err) console.log("Error in server setup!")
+    console.log("Server listening on Port:", PORT);
+})
