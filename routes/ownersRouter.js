@@ -30,4 +30,9 @@ router.get("/", (req,res)=>{
     res.send("hey owners")
 })
 
+router.get("/admin", (req,res)=>{
+    const success = req.flash("success")
+    res.render("admin",{success})
+})
+
 module.exports = router;
