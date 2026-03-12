@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Clinge Bag",
+    "price": 1200,
+    "discount": 0,
+    "bgColor": "#f4ddd2",
+    "panelColor": "#debeae",
+    "textColor": "#774f3d"
+  },
+  {
+    "name": "Backpack",
+    "price": 1100,
+    "discount": 0,
+    "bgColor": "#f3f8fb",
+    "panelColor": "#d3e4ee",
+    "textColor": "#48606e"
+  },
+  {
+    "name": "Multipurpose",
+    "price": 100,
+    "discount": 0,
+    "bgColor": "#ded0bf",
+    "panelColor": "#c5b095",
+    "textColor": "#5f4a30"
+  },
+  {
+    "name": "Pink Attack",
+    "price": 1400,
+    "discount": 25,
+    "bgColor": "#f4e0e1",
+    "panelColor": "#e3c4c6",
+    "textColor": "#816264"
+  },
+  {
+    "name": "The Daily",
+    "price": 100,
+    "discount": 0,
+    "bgColor": "#fbfbfb",
+    "panelColor": "#ebebeb",
+    "textColor": "#717171"
+  }
+]
