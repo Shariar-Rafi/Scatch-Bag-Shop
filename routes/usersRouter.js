@@ -29,7 +29,7 @@ router.post("/profile/update",isLoggedIn,upload.single("profilePic"), async(req,
         if(req.file){
             await userModel.findOneAndUpdate({email: req.user.email},{profilePic: req.file.buffer},{new:true})
         }
-        req.flash("success","Profile updated successfully!")
+        req.flash("success","Profile updated.")
         res.redirect("/users/profile")
     } catch (error) {
         console.log(error.message);

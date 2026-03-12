@@ -54,7 +54,8 @@ router.get("/cart",isLoggedIn, async(req,res)=>{
         }else{
             const bill = (Number(loggedUser.cart[0].price)+20)-Number(loggedUser.cart[0].discount)
             let success = req.flash("success")
-            res.render("cart", {user: loggedUser, bill, success})
+            let error = req.flash("error")
+            res.render("cart", {user: loggedUser, bill, success, error})
         }
     } catch (error) {
         res.send(error.message)
@@ -86,16 +87,15 @@ router.post("/cart/order/:productid",isLoggedIn, async(req,res)=>{
             loggedUser.order.push(req.params.productid)
             loggedUser.cart.pop()
             await loggedUser.save()
-            req.flash("success", "Your order has been set successfully.")
+            req.flash("success", "Order placed successfully.")
             res.redirect("/shop")
         }else{
-            req.flash("success", "Sorry, You already have an order in progress.")
+            req.flash("error", "Sorry, You already have an order in progress.")
             res.redirect("/cart")
         }
     } catch (error) {
         res.send(error.message)
     }
-    
 })
 
 

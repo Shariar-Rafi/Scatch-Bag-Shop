@@ -48,12 +48,12 @@
 
             <div class="bg-zinc-50 p-6 rounded-2xl border border-zinc-100 mt-auto">
                 <div class="flex justify-between items-center mb-6">
-                    <h3 class="text-xl font-bold tracking-tight text-zinc-900">Total Amount</h3>
-                    <h3 class="text-3xl font-bold text-green-600">৳ <%= bill %></h3>
+                    <h3 class="text-lg sm:text-xl font-bold tracking-tight text-zinc-900">Total Amount</h3>
+                    <h3 class="text-lg sm:text-xl font-bold text-green-600">৳ <%= bill %></h3>
                 </div>
                 <form action="/users/order/cancel" method="post" class="w-full cursor-pointer">
-                    <button type="submit" class="w-full py-4 rounded-xl font-medium text-red-600 bg-red-50 hover:bg-red-100 border border-red-200 transition-colors shadow-sm flex items-center justify-center gap-2 active:scale-95">
-                        <i class="ri-close-circle-fill"></i> Cancel Ongoing Order
+                    <button type="submit" class="w-full py-3 rounded-xl font-medium text-red-600 bg-red-50 hover:bg-red-100 border border-red-200 transition-colors shadow-sm flex items-center justify-center gap-2 cursor-pointer active:scale-95">
+                        <i class="ri-close-circle-fill"></i> Cancel Order
                     </button>
                 </form>
             </div>
