@@ -1,8 +1,19 @@
 # Scatch-Bag-Shop Fullstack
 
-![Bag Shop Screenshot](./screenshots/1.png)
+![Scatch Bag Shop Screenshot](./screenshots/1.png)
 
-A full-stack "Bag Shop" web application. This project provides an intuitive platform where users can browse and manage bags available in the shop.
+The **Scatch Bag Shop** is a full-stack simple e-commerce web application specifically designed for browsing and managing variety of bags. This project provides an intuitive and responsive platform, ensuring a seamless shopping experience for users and offering product management features.
+
+It is built with a powerful modern tech stack, incorporating scalable back-end architecture and clean front-end templating.
+
+### Key Technologies Used:
+
+- **Node.js & Express.js**: Handles the server-side logic and routing.
+- **MongoDB & Mongoose**: Used as the primary database to store user and product data securely.
+- **EJS (Embedded JavaScript)**: Powers the dynamic front-end rendered views.
+- **Tailwind CSS**: Ensures the UI is beautiful, modern, and fully responsive across all devices.
+- **JSON Web Tokens (JWT) & bcrypt**: Secures user authentication and encrypts sensitive information.
+- **Express-Session & Connect-Flash**: Manages secure user sessions and provides seamless feedback messages.
 
 ## Getting Started
 
