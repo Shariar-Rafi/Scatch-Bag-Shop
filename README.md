@@ -81,3 +81,11 @@ In the next version, I will introduce Role-Based Access Control and set up 2 dif
 
 1. **Normal Users:** Who can see and buy bags.
 2. **Admin User / Owner:** Who can only create, edit, and delete products.
+
+## Star this project
+
+If you find this project useful, please consider giving it a star! ⭐
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
